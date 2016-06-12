@@ -33,3 +33,14 @@ start reading and writing files on it:
 
     mkfs.ext4 /dev/nbd0
     mount /dev/nbd0 /mnt
+
+## Running the python bridge example that allows you to develop your block device in python
+
+Very similar to the `busexmp.c` is the `pythonbd.c` bridging the actual block device logic to a python script. Running this example is done as follows:
+
+```bash
+modprobe nbd
+./pythonbd /dev/nbd0 pyramdisk
+```
+
+Then you can proceed and use the newly created device just like in the `busexmp.c` example.
