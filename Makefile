@@ -1,4 +1,4 @@
-TARGET		:= busexmp loopback pythontest pythonbd
+TARGET		:= busexmp loopback pythonbd
 LIBOBJS 	:= buse.o
 OBJS		:= $(TARGET:=.o) $(LIBOBJS)
 STATIC_LIB	:= libbuse.a

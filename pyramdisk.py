@@ -1,5 +1,5 @@
 from io import BytesIO
-SIZE = 100 * 1024 * 1024
+SIZE = 2 * 1024 * 1024 * 1024
 ramdisk = BytesIO()
 ramdisk.seek(SIZE - 1)
 ramdisk.write(b'0')
